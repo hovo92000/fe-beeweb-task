@@ -1,0 +1,85 @@
+.create-workspace-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .create-workspace-title{
+        font-size: 32px;
+        text-align: center;
+        color: #fff;
+    }
+        form{
+        width: 500px;
+        height: 500px;
+        padding: 20px 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .signup-title{
+            font-size: 32px;
+            text-align: center;
+            color: #fff;
+        }
+        label{
+            width: 100%;
+        }
+        input{
+            height: 48px;
+            width: 100%;
+            border-radius: 30px;
+            padding: 6px 6px 6px 20px;
+            outline: none;
+            font-size: 16px;
+            color: #000f25;
+            background: #fff;
+            ::placeholder{
+                color: #999;
+            }
+        }
+        .create-workspace-btns-container{
+            display: flex;
+            gap: 10px;
+            .back-btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 16px;
+                cursor: pointer;
+                border: 1px solid #ffd84d;
+                background: transparent;
+                color: #fff;
+                padding: 8px 12px;
+                border-radius: 8px;
+            }
+            .create-btn{
+                display: flex;
+                cursor: pointer;
+                border: none;
+                justify-content: center;
+                align-items: center;
+                border-radius: 28.5px;
+                padding: 10px 31px;
+                font-size: 18px;
+                font-weight: 600;
+                color: #0b1b32;
+                background-color: #ffd84d;
+                &.disabled,
+                &:disabled {
+                    opacity: 0.6;
+                    cursor: default;
+                }
+            }
+        }
+            .back-btn{
+                font-size: 16px;
+                cursor: pointer;
+                border: 1px solid #ffd84d;
+                background: transparent;
+                color: #fff;
+                padding: 8px 12px;
+                border-radius: 8px;
+            }
+    }
+}

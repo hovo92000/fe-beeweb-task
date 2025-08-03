@@ -1,0 +1,76 @@
+.list-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .list-wrapper{
+        width: 100%;
+        max-width: 500px; 
+        height: 500px;
+        padding: 20px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .list-title{
+            font-size: 32px;
+            text-align: center;
+            color: #fff;
+        }
+        .new-workspace-btn-container{
+            display: flex;
+            justify-content: center;
+            .new-workspace-btn{
+                display: flex;
+                cursor: pointer;
+                border: none;
+                justify-content: center;
+                align-items: center;
+                border-radius: 28.5px;
+                padding: 10px 31px;
+                font-size: 18px;
+                font-weight: 600;
+                color: #0b1b32;
+                background-color: #ffd84d;
+            }
+        }
+        .list-box{
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+            gap: 10px;
+            .list-row{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 40px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                padding: 9px 20px;
+                .list-name{
+                    font-size: 18px;
+                    color: #fff;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+                .list-actions{
+                    display: flex;
+                    gap: 10px;
+                    button{
+                        cursor: pointer;
+                        border: 1px solid #ffd84d;
+                        background: transparent;
+                        color: #fff;
+                        padding: 8px 12px;
+                        border-radius: 8px;
+                        &:hover{
+                            background-color: #ffd84d;
+                            color: #0b1b32;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

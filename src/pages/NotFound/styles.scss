@@ -1,0 +1,39 @@
+.not-found-wrapper{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .not-found{
+        font-size: 16rem;
+        color: #ffd84d;
+    }
+    .not-found-text{
+        padding: 0 16px;
+        text-align: center;
+        font-size: 1.25rem;
+        color: #ccc;
+        margin-bottom: 1.5rem;
+        line-height: 1.4;
+    }
+    .home-btn{
+       cursor: pointer;
+        border: 1px solid #ffd84d;
+        background: transparent;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 8px;
+        &:hover{
+            background-color: #ffd84d;
+            color: #0b1b32;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .not-found-wrapper {
+        .not-found {
+            font-size: 10rem;
+        }
+    }
+}
